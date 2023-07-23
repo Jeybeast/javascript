@@ -1,0 +1,46 @@
+    .red {
+        background-color: #181616;
+        padding: 20px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        margin-top: 200px;
+        width: 80%;
+    }
+    
+    .re {
+        color: white;
+    }
+    
+    textarea {
+        width: 50%;
+        height: 500px;
+        margin-bottom: 10px;
+    }
+    
+    #input {
+        flex: display;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    #result {
+        margin-top: 10px;
+        color: white;
+    }
+    
+    body {
+        background-color: bisque;
+    }

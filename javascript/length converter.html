@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>js intro</title>
+</head>
+
+<body>
+    <div class="set">
+        <h1>cm to inches</h1>
+        <div class="red">
+            <input type="text" id="input" placeholder="cm">
+        </div>
+        <div class="bis">
+            <button type="submit" onclick="convert()">convert to inches
+            </button>
+        </div>
+        <div id=result>0
+        </div>
+    </div>
+    <script>
+        function convert() {
+
+            const cmVal = Number(document.getElementById("input").value)
+            const inchVal = cmVal / 2.54;
+            const result = document.getElementById("result")
+            result.innerHTML = inchVal.toFixed(2) + "inches"
+        }
+    </script>
+</body>
+
+</html>

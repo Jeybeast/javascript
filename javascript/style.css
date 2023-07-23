@@ -1,0 +1,46 @@
+  body {
+      margin: 0px;
+      background-color: #f5e8ba;
+  }
+  
+  .set {
+      width: 700px;
+      height: 700px;
+      background-color: black;
+      margin: 200px auto;
+      border-radius: 50px;
+  }
+  
+  h1 {
+      display: flex;
+      justify-content: center;
+      color: #f5e8ba;
+      letter-spacing: 1px;
+      margin-top: 30px;
+  }
+  
+  .set input {
+      width: 25%;
+      height: 50px;
+      border: 2px solid black;
+      border-radius: 5px;
+      margin: 150px 0px 0px 170px;
+      font-size: x-large;
+      padding-left: 21%;
+  }
+  
+  button {
+      margin: 25px 0px 0px 275px;
+      border-radius: 10px;
+  }
+  
+  #result {
+      color: rgb(245, 246, 247);
+      margin-top: 20px;
+      font-size: 32px;
+      margin-left: 325px;
+  }
+  
+  button:hover {
+      cursor: pointer;
+  }

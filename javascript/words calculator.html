@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css" type="text/css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="red">
+
+        <p class="re">Type a sentence</p>
+
+        <textarea id="input" rows="14" cols="40"></textarea>
+        <div>
+            <button type="submit" onclick="convert()">calculate words</button></div>
+        <div id="result">0</div>
+    </div>
+    <script>
+        function convert() {
+            var words = document.getElementById("input").value;
+            var split = words.split(/,|\s{2}| /);
+            var result = document.getElementById("result");
+            result.innerHTML = split.length;
+        }
+    </script>
+</body>
+
+</html>

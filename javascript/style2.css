@@ -1,0 +1,39 @@
+body {
+    background-color: aquamarine;
+    margin: 0;
+}
+
+#red {
+    width: 600px;
+    height: 600px;
+    background-color: black;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+h2 {
+    color: aquamarine;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#input {
+    margin: 150px 0px 30px 90px;
+    width: 200px;
+    height: 25px;
+    padding-left: 200px;
+}
+
+button {
+    margin: 0px 0px 0px 270px;
+}
+
+#result {
+    color: white;
+    margin-top: 20px;
+    font-size: 32px;
+    margin-left: 260px;
+}

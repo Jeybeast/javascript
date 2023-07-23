@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css" type="text/css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="red">
+        <h2>celcius to fahrenheit</h2>
+
+        <div class="input">
+            <input type="text" id="input" placeholder="C"></div>
+        <div class="black">
+            <button type="submit" onclick="convert()">convert</button></div>
+        <div id="result"></div>
+    </div>
+    <script>
+        function convert() {
+            const CVal = Number(document.getElementById("input").value)
+            const FVal = (CVal * 1.8) + 32
+            const result = document.getElementById("result")
+
+            result.innerHTML = FVal.toFixed(2) + "F"
+        }
+    </script>
+</body>
+
+</html>

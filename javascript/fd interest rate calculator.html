@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>js intro</title>
+</head>
+
+<body>
+    <div class="set">
+        <h1>fd rate calculator</h1>
+        <div class="red">
+            <input type="text" id="input" placeholder="months">
+        </div>
+        <div class="bis">
+            <button type="submit" onclick="convert()">calculate
+            </button>
+        </div>
+        <div id=result>0
+        </div>
+    </div>
+    <script>
+        function convert() {
+            var months = Number(document.getElementById("input").value);
+            var interestrate = 0
+            if (months < 3) {
+                interestrate = 5.8;
+            } else if (months >= 3 && months <= 6) {
+                interestrate = 6.5;
+            } else if (months >= 7 && months <= 9) {
+                interestrate = 6.8;
+            } else {
+                interestrate = 7;
+            }
+            var result = document.getElementById("result");
+            result.innerHTML = interestrate + "%";
+
+        }
+    </script>
+</body>
+
+</html>

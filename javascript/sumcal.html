@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Numbers</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            text-align: center;
+            margin-top: 150px;
+            font-family: Arial, sans-serif;
+        }
+        
+        input {
+            padding: 10px;
+            font-size: 18px;
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+        
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4c5baf;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        
+        .room {
+            display: inline-FLEX;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>SUM CALCULATOR</h1>
+    <div class="room">
+        <input type="number" id="num1" placeholder="Enter number 1">
+        <h3>+</h3><input type="number" id="num2" placeholder="Enter number 2">
+    </div>
+    <br>
+    <button onclick="addNumbers()">Add</button>
+    <br>
+    <p id="result"></p>
+
+    <script>
+        function addNumbers() {
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+            var sum = num1 + num2;
+            document.getElementById("result").innerHTML = "ANSWER IS: " + sum;
+        }
+    </script>
+</body>
+
+</html>
